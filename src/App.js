@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
+// imoprt {HashRouter} from 'react-router-dom'
 import './App.css';
 // import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
@@ -21,7 +22,7 @@ function App() {
         // console.log(questions)
   }
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/reactQuiz'>
       <div className="app" style={{ backgroundImage: "url(./ques12.png)" }}>
         {/* <Header /> */}
    
